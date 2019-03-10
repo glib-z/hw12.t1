@@ -13,15 +13,13 @@ public class Square extends Figure {
 
     @Override
     public void draw(Boolean fill) {
-        double dx = size / 2;
-        double dy = size / 2;
         if (fill) {
             gc.setFill(Color.GREEN);
-            gc.fillRect(x - dx, y - dy, size, size);
+            gc.fillRect(x - size / 2, y - size / 2, size, size);
         }
         gc.setStroke(Color.GREEN);
         gc.setLineWidth(2);
-        gc.strokeRect(x - dx, y - dy, size, size);
+        gc.strokeRect(x - size / 2, y - size / 2, size, size);
     }
 
     @Override

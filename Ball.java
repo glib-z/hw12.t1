@@ -13,15 +13,13 @@ public class Ball extends Figure {
 
     @Override
     public void draw(Boolean fill) {
-        double dx = size / 2;
-        double dy = size / 2;
         if (fill) {
             gc.setFill(Color.RED);
-            gc.fillOval(x - dx, y - dy, size, size);
+            gc.fillOval(x - size / 2, y - size / 2, size, size);
         }
         gc.setStroke(Color.RED);
         gc.setLineWidth(2);
-        gc.strokeOval(x - dx, y - dy, size, size);
+        gc.strokeOval(x - size / 2, y - size / 2, size, size);
     }
 
     @Override
